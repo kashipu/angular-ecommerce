@@ -1,5 +1,5 @@
 .top-alert-box {
-  background-color: black;
+  background-color: var(--black);
   padding: var(--space-4);
   display: flex;
   justify-content: center;
@@ -9,3 +9,14 @@
     font-weight: var(--f-w-600);
   }
 }
+@media (max-width: $bp-xsmall) {
+  .top-alert-box {
+    background-color: var(--black);
+    padding: var(--space-2) var(--space-4);
+  }
+  .top-alert-text {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+

@@ -9,7 +9,7 @@ $gray-500: #6c808b;
 $accent-100: #0071ae;
 
 /* Breackpoints */
-$bp-xsmall: 320px;
+$bp-xsmall: 390px;
 $bp-small: 576px;
 $bp-medium: 768px;
 $bp-large: 992px;
@@ -53,13 +53,6 @@ $space-16: 4rem;
   --gray-400: #{$gray-400};
   --gray-500: #{$gray-500};
   --accent-100: #{$accent-100};
-
-  /* Breackpoints */
-  --bp-xsmall: #{$bp-xsmall};
-  --bp-small: #{$bp-small};
-  --bp-medium: #{$bp-medium};
-  --bp-large: #{$bp-large};
-  --bp-xlarge: #{$bp-xlarge};
 
   /* Typography */
   --font-family: #{$font-family};

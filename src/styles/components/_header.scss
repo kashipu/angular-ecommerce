@@ -35,6 +35,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.header-burguer-button {
+  display: none;
+}
 .header-menu {
   display: flex;
   justify-content: center;
@@ -94,3 +97,39 @@ header {
   top: -16px;
   right: -16px;
 }
+
+@media (max-width: $bp-xsmall) {
+  .subheader {
+    display: none;
+  }
+  header {
+    padding: var(--space-4) var(--space-4);
+  }
+  .header-burguer-button {
+    display: block;
+  }
+  .header-logo{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    img {
+      width: 50px;
+      margin-left: 3rem;
+    }
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-user-login {
+    padding: 0 var(--space-2);
+    ul {
+      gap: var(--space-4);
+      }
+    }
+    .card-counter {
+      width: 20px;
+      height: 20px;
+      font-size: 0.8rem;
+    }
+  }
+
