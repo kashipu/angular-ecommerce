@@ -1,5 +1,13 @@
 .card-product {
   display: inline-block;
+  padding-bottom: var(--space-16);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid var(--black);
+  }
+  &:hover .card-product-price {
+    top: -60px;
+  }
 }
 .card-product-anchor {
   text-decoration: none;

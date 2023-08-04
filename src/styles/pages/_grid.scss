@@ -2,6 +2,12 @@
   max-width: var(--bp-xlarge);
   width: 100%;
   margin: 0 auto;
-  padding-top: var(--space-8);
   padding: var(--space-8);
+  padding-top: var(--space-8);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-2);
 }
