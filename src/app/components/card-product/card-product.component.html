@@ -2,17 +2,17 @@
   <a class="card-product-anchor" href="#">
     <div class="card-product-box">
       <div class="card-product-img">
-        <img src="https://via.placeholder.com/380" alt="product image" />
+        <img [src]="productInfo.image" alt="product image" />
       </div>
       <div class="card-product-body">
         <div class="card-product-price">
-          <span>$ 250.000</span>
+          <span>$ {{ productInfo.price }}</span>
         </div>
         <div class="card-product-title">
-          <h2>TENIS GALAXAR RUN</h2>
+          <h2>{{ productInfo.name }}</h2>
         </div>
         <div class="card-product-category">
-          <h3>Hombre Running</h3>
+          <h3> {{ productInfo.categories[0]}}</h3>
         </div>
       </div>
     </div>

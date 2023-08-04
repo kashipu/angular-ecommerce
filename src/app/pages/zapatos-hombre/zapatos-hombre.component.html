@@ -5,6 +5,8 @@
   subtitlePage="Un amplio catálogo de zapatos y calzado de hombre adidas con los mejores diseños y tecnología.">
   </app-page-title>
   <div class="products-grid">
-    <app-card-product *ngFor="let item of cantProducts"></app-card-product>
+      <app-card-product
+      *ngFor="let item of productsArray"
+      [productInfo]="item"></app-card-product>
   </div>
 </div>

@@ -1,27 +1,44 @@
-# AngularEcommerce
+# Carrito de compras Zapatos en Angular
+## Requerimientos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+* Yo pueda entrar y ver una lista de productos que puedo comprar.
+* Quiero poder ver
+  - Precio de un producto
+  - Nombre
+  - Categoria
+  - Tags
+  - Imagen
+  - Descuento con restriccion de tiempo *(quiero poder ver este descuento cuando acaba),
+  - Calificación
+  - Comentarios.
 
-## Development server
+* Deseo poder ordenar los productos que estoy viendo por precio (menor a mayor, o viceversa) o por calificacion (menor a mayor, o viceversa)
+
+* Quiero poder añadir a mi carrito de compras un producto que me haya interesado.
+
+* Quiero poder añadir tantos productos me interesen
+
+* Quiero poder modificar la cantidad de productos en mi carrito (añadir o disminuir unidades, eliminar un producto carrito)
+
+* En mi carrito quiero poder ver el precio total de los productos que llevo hasta el momento
+
+* Deseo también poder concretar la compra de los productos que tengo en mi carrito.
+
+
+
+## Detalles del proyecto
+
+### Estilos
+- Los estilos están estructurados en la carpeta `src/styles/` en diferentes carpetas y se consolidadn con `@imports` en el archivo `main.scss`
+
+### Estructura
+
+El proyecto tiene los siguientes directorios
+- Components - Componentes pequeños de la app ** no se manejan estilos en los componentes **
+- Pages - Componentes de pantalla completa y que se usan en el routing
+- Data - Data inicial del proyecto para hacer mock de la información
+- Models - Interfaces de los datos usados
+
+### Correr el proyecto
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
