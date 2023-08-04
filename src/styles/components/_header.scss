@@ -1,5 +1,6 @@
 /* Subheader */
 .header-box{
+  border-bottom: 1px solid var(--gray-100);
   display: block;
 }
 .subheader {
@@ -30,6 +31,9 @@ header {
   align-items: center;
 }
 .header-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
   ul {
     display: flex;
     gap: var(--space-10);
@@ -42,6 +46,11 @@ header {
   }
 }
 .header-user-options {
+  display: flex;
+}
+
+.header-user-login {
+  padding: 0 var(--space-4);
   ul {
     display: flex;
     gap: var(--space-10);
