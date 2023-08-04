@@ -1,6 +1,13 @@
 /* Colors */
 $white: #ffffff;
 
+/* Breackpoints */
+$bp-xsmall: 320px;
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-xlarge: 1540px;
+
 /* Typography */
 $font-family: 'Barlow', sans-serif;
 $f-w-300: 300;
@@ -31,6 +38,14 @@ $space-16: 4rem;
 :root {
   /* Colors */
   --white: #{$white};
+
+  /* Breackpoints */
+  --bp-xsmall: #{$bp-xsmall};
+  --bp-small: #{$bp-small};
+  --bp-medium: #{$bp-medium};
+  --bp-large: #{$bp-large};
+  --bp-xlarge: #{$bp-xlarge};
+
   /* Typography */
   --font-family: #{$font-family};
   --f-w-300: #{$f-w-300};

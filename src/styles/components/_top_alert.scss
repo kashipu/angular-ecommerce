@@ -1,0 +1,10 @@
+.top-alert-box {
+  background-color: black;
+  padding: var(--space-3);
+  display: flex;
+  justify-content: center;
+  .top-alert-text {
+    color: white;
+    font-weight: var(--f-w-600);
+  }
+}

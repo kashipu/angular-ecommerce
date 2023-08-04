@@ -27,8 +27,21 @@ header {
   background-color: var(--white);
   padding: var(--space-5) var(--space-8);
   justify-content: space-between;
+  align-items: center;
 }
 .header-menu {
+  ul {
+    display: flex;
+    gap: var(--space-10);
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.header-user-options {
   ul {
     display: flex;
     gap: var(--space-10);
