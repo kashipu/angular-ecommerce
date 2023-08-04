@@ -1,6 +1,6 @@
 .card-product {
   display: inline-block;
-  padding-bottom: var(--space-16);
+  padding-bottom: var(--space-8);
   transition: all 0.3s ease-in-out;
   &:hover {
     border: 1px solid var(--black);
@@ -37,6 +37,7 @@
   font-size: var(--space-4);
   font-weight: var(--f-w-300);
   color: var(--gray-500);
+  text-transform: capitalize;
 }
 
 .card-product-price {
@@ -45,5 +46,16 @@
   background-color: var(--white);
   color: var(--black);
   padding: 0.5rem;
+}
+
+.card-product-button-car {
+  button {
+    background-color: transparent;
+    padding: var(--space-2) var(--space-6);
+    font-family: var(--font-family);
+    border: 1px solid var(--black);
+    border-radius: 0;
+    cursor: pointer;
+  }
 }
 

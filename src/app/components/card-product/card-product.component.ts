@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Product } from 'src/app/models/Product.model';
+import { ProductosService } from '../../services/productos.service';
+
 
 @Component({
   selector: 'app-card-product',
@@ -19,4 +21,10 @@ export class CardProductComponent {
     calification: 0
   };
   @Input() productInfo: Product = this.dataInit;
+  constructor(private ProductosService: ProductosService) {
+   }
+    addToCart(id:number): void {
+      this.ProductosService.addToCarById(id);
+      console.log(this.ProductosService.SHOPPING_CART)
+    }
 }

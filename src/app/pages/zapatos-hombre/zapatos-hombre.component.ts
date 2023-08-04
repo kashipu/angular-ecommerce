@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Productos } from 'src/app/data/data.products';
+import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
   selector: 'app-zapatos-hombre',
@@ -8,9 +8,11 @@ import { Productos } from 'src/app/data/data.products';
   styleUrls: ['./zapatos-hombre.component.scss']
 })
 export class ZapatosHombreComponent {
-  productsArray = Productos.filter(product => product.categories.includes("hombre"));
+  /* Mostrar datos por categoría */
+  productsArray = this.productosService.filterByCategory("hombre");
+  /* Modificar el title de la página */
   titlePage = 'Adidas | Zapatos para Hombre';
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title, private productosService: ProductosService) {
     this.titleService.setTitle(this.titlePage);
   }
 }
