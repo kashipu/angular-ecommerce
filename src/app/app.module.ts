@@ -11,6 +11,7 @@ import { CardProductComponent } from './components/card-product/card-product.com
 import { ZapatosMujerComponent } from './pages/zapatos-mujer/zapatos-mujer.component';
 import { ZapatosHombreComponent } from './pages/zapatos-hombre/zapatos-hombre.component';
 import { ZapatosNinosComponent } from './pages/zapatos-ninos/zapatos-ninos.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ZapatosNinosComponent } from './pages/zapatos-ninos/zapatos-ninos.compo
     CardProductComponent,
     ZapatosMujerComponent,
     ZapatosHombreComponent,
-    ZapatosNinosComponent
+    ZapatosNinosComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,
