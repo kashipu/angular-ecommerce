@@ -2,19 +2,19 @@
   <div class="subheader">
     <div class="subheader-options">
       <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-      </ul>
-    </div>
-    <div class="subheader-internacionalizacion">
-      <ul>
-        <li><a href="#">English</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Lista de deseos</a></li>
+        <li><a href="#">Cambios y devoluciones</a></li>
+        <li><a href="#">Seguimiento de pedidos</a></li>
+        <li><a href="#">Lista de deseos</a></li>
       </ul>
     </div>
   </div>
   <header>
       <div class="header-logo">
-        <img src="/assets/img/logo_adidas.svg" alt="">
+        <a routerLink="/">
+          <img src="assets/img/logo_adidas.svg" alt="">
+        </a>
       </div>
       <nav class="header-menu">
         <ul>
@@ -24,15 +24,24 @@
         </ul>
       </nav>
       <div class="header-user-options">
-        <div class="header-user-search">
+        <!-- <div class="header-user-search">
           <input type="text" placeholder="Search">
           <button>Search</button>
-        </div>
+        </div> -->
         <div class="header-user-login">
           <ul>
-            <li><a href="#">Cuenta</a></li>
-            <li><a href="#">Favoritos</a></li>
-            <li><a href="#">Carrito</a></li>
+            <li><a routerLink="#"><img src="assets/icons/user.svg" alt=""></a></li>
+            <li><a routerLink="#"><img src="assets/icons/like.svg" alt=""></a></li>
+            <li>
+              <div class="car-icon">
+                <a routerLink="#">
+                  <div class="card-counter">
+                    <span>{{ counterItemsCar }}</span>
+                  </div>
+                  <img src="assets/icons/shopping.svg" alt="">
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

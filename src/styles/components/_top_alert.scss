@@ -1,9 +1,10 @@
 .top-alert-box {
   background-color: black;
-  padding: var(--space-3);
+  padding: var(--space-4);
   display: flex;
   justify-content: center;
   .top-alert-text {
+    font-size: .8rem;
     color: white;
     font-weight: var(--f-w-600);
   }

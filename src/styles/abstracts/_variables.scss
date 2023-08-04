@@ -6,6 +6,7 @@ $gray-200: #CFD8DC;
 $gray-300: #B0BEC5;
 $gray-400: #90A4AE;
 $gray-500: #6c808b;
+$accent-100: #0071ae;
 
 /* Breackpoints */
 $bp-xsmall: 320px;
@@ -50,6 +51,7 @@ $space-16: 4rem;
   --gray-300: #{$gray-300};
   --gray-400: #{$gray-400};
   --gray-500: #{$gray-500};
+  --accent-100: #{$accent-100};
 
   /* Breackpoints */
   --bp-xsmall: #{$bp-xsmall};
