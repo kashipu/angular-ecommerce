@@ -1,0 +1,42 @@
+/* Subheader */
+.header-box{
+  display: block;
+}
+.subheader {
+  display: flex;
+  gap: var(--space-10);
+  background-color: var(--white);
+  justify-content: flex-end;
+  padding: var(--space-2) var(--space-8);
+  .subheader-options, .subheader-internacionalizacion {
+    ul {
+      display: flex;
+      gap: var(--space-10);
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+/* Header */
+header {
+  display: flex;
+  background-color: var(--white);
+  padding: var(--space-5) var(--space-8);
+  justify-content: space-between;
+}
+.header-menu {
+  ul {
+    display: flex;
+    gap: var(--space-10);
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

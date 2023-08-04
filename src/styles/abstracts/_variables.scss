@@ -1,4 +1,5 @@
-
+/* Colors */
+$white: #ffffff;
 
 /* Typography */
 $font-family: 'Barlow', sans-serif;
@@ -28,6 +29,8 @@ $space-15: 3.75rem;
 $space-16: 4rem;
 
 :root {
+  /* Colors */
+  --white: #{$white};
   /* Typography */
   --font-family: #{$font-family};
   --f-w-300: #{$f-w-300};
