@@ -26,5 +26,6 @@ export class HeaderComponent {
   }
   restartMenu() {
     this.responsiveMenu = false;
+    document.body.style.overflow = 'auto'
   }
 }
