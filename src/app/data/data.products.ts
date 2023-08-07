@@ -4,7 +4,7 @@ export const Productos: Product[] = [
   {
     id: 1,
     name: "Zapato Niño 1",
-    price: 500,
+    price: 250.000,
     discount: 10,
     description: "Zapato para niño de alta calidad",
     image: "https://via.placeholder.com/380x380",
@@ -15,7 +15,7 @@ export const Productos: Product[] = [
   {
     id: 2,
     name: "Zapato Niño 2",
-    price: 450,
+    price: 450.000,
     discount: 5,
     description: "Zapato para niño resistente al agua",
     image: "https://via.placeholder.com/380x380",

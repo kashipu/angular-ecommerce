@@ -12,6 +12,9 @@ import { ZapatosMujerComponent } from './pages/zapatos-mujer/zapatos-mujer.compo
 import { ZapatosHombreComponent } from './pages/zapatos-hombre/zapatos-hombre.component';
 import { ZapatosNinosComponent } from './pages/zapatos-ninos/zapatos-ninos.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { SubheaderComponent } from './components/subheader/subheader.component';
+import { HeaderOptionsComponent } from './components/header-options/header-options.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
     ZapatosMujerComponent,
     ZapatosHombreComponent,
     ZapatosNinosComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    SubheaderComponent,
+    HeaderOptionsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

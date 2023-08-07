@@ -1,31 +1,15 @@
 <div class="header-box">
-  <div class="subheader">
-    <div class="subheader-options">
-      <ul>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Lista de deseos</a></li>
-        <li><a href="#">Cambios y devoluciones</a></li>
-        <li><a href="#">Seguimiento de pedidos</a></li>
-        <li><a href="#">Lista de deseos</a></li>
-      </ul>
-    </div>
-  </div>
+  <app-subheader></app-subheader>
   <header>
     <div class="header-burguer-button">
-      <img src="assets/icons/burguer-icon.svg" alt="">
+      <a (click)="showMenu()"><img src="assets/icons/burguer-icon.svg" alt=""></a>
     </div>
       <div class="header-logo">
         <a routerLink="/">
-          <img src="assets/img/logo_adidas.svg" alt="">
+          <img src="assets/img/logo_adidas.svg" alt="Logo, Adidas">
         </a>
       </div>
-      <nav class="header-menu">
-        <ul>
-          <li><a routerLink="zapatos-hombre">Masculino</a></li>
-          <li><a routerLink="zapatos-mujer">Femenino</a></li>
-          <li><a routerLink="zapatos-ninos">Infantil</a></li>
-        </ul>
-      </nav>
+      <app-header-options></app-header-options>
       <div class="header-user-options">
         <div class="header-user-login">
           <ul>
@@ -45,4 +29,18 @@
         </div>
       </div>
   </header>
+  <div [class.show]="responsiveMenu" class="header-dropdown-menu">
+    <ul>
+      <li><a href="zapatos-hombre">Masculino</a></li>
+      <li><a href="zapatos-mujer"> Femenino</a></li>
+      <li><a href="zapatos-ninos"> Infantil</a></li>
+    </ul>
+    <hr>
+    <ul>
+      <li>Lista de deseos</li>
+      <li>Cambios y devoluciones</li>
+      <li>Seguimiento de pedidos</li>
+      <li>Ayuda</li>
+    </ul>
+  </div>
 </div>
