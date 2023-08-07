@@ -3,8 +3,8 @@ import { Product } from "../models/Product.model";
 export const Productos: Product[] = [
   {
     id: 1,
-    name: "Zapato Niño 1",
-    price: 250.000,
+    name: "Zapato Niño 1 Bublee",
+    price: 150000,
     discount: 10,
     description: "Zapato para niño de alta calidad",
     image: "https://via.placeholder.com/380x380",
@@ -15,7 +15,7 @@ export const Productos: Product[] = [
   {
     id: 2,
     name: "Zapato Niño 2",
-    price: 450.000,
+    price: 130000,
     discount: 5,
     description: "Zapato para niño resistente al agua",
     image: "https://via.placeholder.com/380x380",
@@ -26,7 +26,7 @@ export const Productos: Product[] = [
   {
     id: 3,
     name: "Zapato Hombre 1",
-    price: 800,
+    price: 280000,
     discount: 20,
     description: "Zapato elegante para hombre",
     image: "https://via.placeholder.com/380x380",
@@ -37,7 +37,7 @@ export const Productos: Product[] = [
   {
     id: 4,
     name: "Zapato Hombre 2",
-    price: 750,
+    price: 220000,
     discount: 15,
     description: "Zapato casual para hombre",
     image: "https://via.placeholder.com/380x380",
@@ -48,7 +48,7 @@ export const Productos: Product[] = [
   {
     id: 5,
     name: "Zapato Mujer 1",
-    price: 600,
+    price: 350000,
     discount: 10,
     description: "Zapato elegante para mujer",
     image: "https://via.placeholder.com/380x380",
@@ -59,7 +59,7 @@ export const Productos: Product[] = [
   {
     id: 6,
     name: "Zapato Mujer 2",
-    price: 550,
+    price: 170000,
     discount: 5,
     description: "Zapato casual para mujer",
     image: "https://via.placeholder.com/380x380",
@@ -71,7 +71,7 @@ export const Productos: Product[] = [
   {
     id: 7,
     name: "Zapato Niño 3",
-    price: 480,
+    price: 260000,
     discount: 15,
     description: "Zapato para niño con luces",
     image: "https://via.placeholder.com/380x380",
@@ -82,7 +82,7 @@ export const Productos: Product[] = [
   {
     id: 7,
     name: "Zapato Niño 3",
-    price: 480,
+    price: 150000,
     discount: 15,
     description: "Zapato para niño con luces",
     image: "https://via.placeholder.com/380x380",
@@ -93,7 +93,7 @@ export const Productos: Product[] = [
   {
     id: 8,
     name: "Zapato Hombre 3",
-    price: 900,
+    price: 310000,
     discount: 25,
     description: "Zapato deportivo para hombre",
     image: "https://via.placeholder.com/380x380",
@@ -104,7 +104,7 @@ export const Productos: Product[] = [
   {
     id: 9,
     name: "Zapato Mujer 3",
-    price: 620,
+    price: 450000,
     discount: 12,
     description: "Zapato para mujer con plataforma",
     image: "https://via.placeholder.com/380x380",
@@ -115,7 +115,7 @@ export const Productos: Product[] = [
   {
     id: 10,
     name: "Zapato Niño 4",
-    price: 520,
+    price: 180000,
     discount: 8,
     description: "Zapato para niño deportivo",
     image: "https://via.placeholder.com/380x380",
@@ -126,7 +126,7 @@ export const Productos: Product[] = [
   {
     id: 11,
     name: "Zapato Hombre 4",
-    price: 780,
+    price: 280000,
     discount: 18,
     description: "Zapato casual para hombre",
     image: "https://via.placeholder.com/380x380",
@@ -137,7 +137,7 @@ export const Productos: Product[] = [
   {
     id: 12,
     name: "Zapato Mujer 4",
-    price: 580,
+    price: 265000,
     discount: 10,
     description: "Zapato elegante para mujer",
     image: "https://via.placeholder.com/380x380",
@@ -148,7 +148,7 @@ export const Productos: Product[] = [
   {
     id: 13,
     name: "Zapato Niño 5",
-    price: 460,
+    price: 195000,
     discount: 20,
     description: "Zapato para niño de cuero",
     image: "https://via.placeholder.com/380x380",
@@ -159,7 +159,7 @@ export const Productos: Product[] = [
   {
     id: 14,
     name: "Zapato Hombre 5",
-    price: 820,
+    price: 250000,
     discount: 5,
     description: "Zapato casual para hombre",
     image: "https://via.placeholder.com/380x380",
@@ -170,7 +170,7 @@ export const Productos: Product[] = [
   {
     id: 15,
     name: "Zapato Mujer 5",
-    price: 540,
+    price: 195000,
     discount: 15,
     description: "Zapato deportivo para mujer",
     image: "https://via.placeholder.com/380x380",
@@ -181,7 +181,7 @@ export const Productos: Product[] = [
   {
     id: 16,
     name: "Zapato Niño 6",
-    price: 500,
+    price: 140000,
     discount: 10,
     description: "Zapato casual para niño",
     image: "https://via.placeholder.com/380x380",

@@ -1,0 +1,31 @@
+.shopping-cart {
+  display: none;
+}
+
+.shopping-cart-box {
+  max-width: 400px;
+  width: 100%;
+  right: 0;
+  position: absolute;
+  border: 1px solid var(--gray-100);
+  padding: 20px;
+  background-color: var(--white);
+  z-index: 2;
+}
+.shopping-cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.5;
+  padding: var(--space-4) 0;
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: var(--space-2);
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}

@@ -4,31 +4,34 @@
     <div class="header-burguer-button">
       <a (click)="showMenu()"><img src="assets/icons/burguer-icon.svg" alt=""></a>
     </div>
-      <div class="header-logo">
-        <a routerLink="/">
-          <img src="assets/img/logo_adidas.svg" alt="Logo, Adidas">
-        </a>
-      </div>
-      <app-header-options></app-header-options>
-      <div class="header-user-options">
-        <div class="header-user-login">
-          <ul>
-            <li><a routerLink="#"><img src="assets/icons/user.svg" alt=""></a></li>
-            <li><a routerLink="#"><img src="assets/icons/like.svg" alt=""></a></li>
-            <li>
-              <div class="car-icon">
-                <a routerLink="#">
-                  <div class="card-counter">
-                    <span>{{ counterItemsCar }}</span>
-                  </div>
-                  <img src="assets/icons/shopping.svg" alt="">
-                </a>
+    <div class="header-logo">
+      <a routerLink="/">
+        <img src="assets/img/logo_adidas.svg" alt="Logo, Adidas">
+      </a>
+    </div>
+    <app-header-options></app-header-options>
+    <div class="header-user-options">
+      <div class="header-user-login">
+        <ul>
+          <li><a routerLink="#"><img src="assets/icons/user.svg" alt=""></a></li>
+          <li><a routerLink="#"><img src="assets/icons/like.svg" alt=""></a></li>
+          <li>
+            <div class="car-icon">
+              <div class="card-counter">
+                <span>{{ counterItemsCar }}</span>
               </div>
-            </li>
-          </ul>
-        </div>
+              <div (click)="showCart()" class="header-cart-icon">
+                <img src="assets/icons/shopping.svg" alt="">
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+    </div>
   </header>
+  <div [class.show]="shoppingCart" class="shopping-cart">
+    <app-shopping-car></app-shopping-car>
+  </div>
   <div [class.show]="responsiveMenu" class="header-dropdown-menu">
     <ul>
       <li><a href="zapatos-hombre">Masculino</a></li>

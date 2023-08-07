@@ -6,6 +6,7 @@ import { ProductosService } from '../../services/productos.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  shoppingCart: boolean = false;
   responsiveMenu: boolean = true;
   counterItemsCar: number = 0;
   constructor(private ProductosService: ProductosService) {}
@@ -18,5 +19,9 @@ export class HeaderComponent {
   showMenu() {
     this.responsiveMenu = !this.responsiveMenu;
     document.body.style.overflow = this.responsiveMenu ? 'hidden' : 'auto';
+    }
+    showCart() {
+      this.shoppingCart = !this.shoppingCart;
+      console.log("hola")
     }
 }

@@ -15,6 +15,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { SubheaderComponent } from './components/subheader/subheader.component';
 import { HeaderOptionsComponent } from './components/header-options/header-options.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ShoppingCarComponent } from './components/shopping-car/shopping-car.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ProductPageComponent,
     SubheaderComponent,
     HeaderOptionsComponent,
-    FooterComponent
+    FooterComponent,
+    ShoppingCarComponent
   ],
   imports: [
     BrowserModule,

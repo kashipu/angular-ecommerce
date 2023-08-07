@@ -1,0 +1,12 @@
+<div class="shopping-cart-box">
+  <div *ngFor="let item of carrito" class="shopping-cart-card">
+    <div class="shopping-cart-item">
+      <img [src]="item.image" alt="">
+      <div class="shopping-cart-item-info">
+        <h2>{{item.name}}</h2>
+        <p> $ {{item.price | number}}</p>
+      </div>
+    </div>
+  </div>
+  <button>Ver carrito</button>
+</div>
