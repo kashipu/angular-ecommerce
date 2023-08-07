@@ -4,6 +4,9 @@
     <p>{{ subtitlePage }}</p>
   </div>
   <div class="page-title-button">
-    <button type="button">Filtrar y ordenar</button>
+    <select [(ngModel)]="selectOption" (change)="selectOrderBy()">
+      <option value="asc" selected>Precio: Menor a mayor</option>
+      <option value="des">Precio: Mayor a menor</option>
+    </select>
   </div>
 </div>

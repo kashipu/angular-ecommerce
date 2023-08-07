@@ -29,3 +29,12 @@
     margin: 0;
   }
 }
+.shopping-cart-total {
+  padding: var(--space-4) 0;
+}
+.shopping-cart-box .empty {
+  text-align: center;
+  padding: var(--space-6) 0;
+  text-transform: uppercase;
+  font-weight: var(--f-w-700)
+}

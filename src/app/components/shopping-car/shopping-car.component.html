@@ -1,4 +1,4 @@
-<div class="shopping-cart-box">
+<div *ngIf="carrito.length > 0; else elseBlock" class="shopping-cart-box">
   <div *ngFor="let item of carrito" class="shopping-cart-card">
     <div class="shopping-cart-item">
       <img [src]="item.image" alt="">
@@ -8,5 +8,13 @@
       </div>
     </div>
   </div>
-  <button>Ver carrito</button>
+  <div class="shopping-cart-total">
+    <p>Total: Pendiente por ajustar servicio</p>
+  </div>
+  <button>Ver Carrito</button>
 </div>
+<ng-template #elseBlock>
+  <div class="shopping-cart-box">
+    <p class="empty">El carrito de compras está vacío</p>
+  </div>
+</ng-template >

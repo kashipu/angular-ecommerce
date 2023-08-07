@@ -9,7 +9,7 @@ export class HeaderComponent {
   shoppingCart: boolean = false;
   responsiveMenu: boolean = true;
   counterItemsCar: number = 0;
-  constructor(private ProductosService: ProductosService) {}
+  constructor(private ProductosService: ProductosService) { }
   ngOnInit(): void {
     this.ProductosService.getShoppingCart().subscribe(() => {
       this.counterItemsCar = this.ProductosService.SHOPPING_CART.length;
@@ -19,9 +19,12 @@ export class HeaderComponent {
   showMenu() {
     this.responsiveMenu = !this.responsiveMenu;
     document.body.style.overflow = this.responsiveMenu ? 'hidden' : 'auto';
-    }
-    showCart() {
-      this.shoppingCart = !this.shoppingCart;
-      console.log("hola")
-    }
+  }
+  showCart() {
+    this.shoppingCart = !this.shoppingCart;
+    console.log("hola")
+  }
+  restartMenu() {
+    this.responsiveMenu = false;
+  }
 }

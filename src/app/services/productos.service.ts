@@ -13,6 +13,8 @@ export class ProductosService {
   PRODUCTS_DATA: Product[] = Productos;
   SHOPPING_CART: Product[] = [];
   _updateShoppingCart = new BehaviorSubject<Product[]>(this.SHOPPING_CART);
+  _totalShoppingCart = new BehaviorSubject<number>(0);
+  orderByOptions: string = '';
   constructor() {
     console.log()
    }

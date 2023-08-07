@@ -109,6 +109,12 @@ header {
   z-index: 2;
   ul li {
     padding: var(--space-4) 0;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: var(--f-w-700);
+      color: var(--black);
+    }
     }
 }
 

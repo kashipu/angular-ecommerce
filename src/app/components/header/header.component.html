@@ -34,9 +34,9 @@
   </div>
   <div [class.show]="responsiveMenu" class="header-dropdown-menu">
     <ul>
-      <li><a href="zapatos-hombre">Masculino</a></li>
-      <li><a href="zapatos-mujer"> Femenino</a></li>
-      <li><a href="zapatos-ninos"> Infantil</a></li>
+      <li><a (click)="restartMenu()" routerLink="zapatos-hombre">Masculino</a></li>
+      <li><a (click)="restartMenu()" routerLink="zapatos-mujer"> Femenino</a></li>
+      <li><a (click)="restartMenu()" routerLink="zapatos-ninos"> Infantil</a></li>
     </ul>
     <hr>
     <ul>

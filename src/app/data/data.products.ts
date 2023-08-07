@@ -3,22 +3,22 @@ import { Product } from "../models/Product.model";
 export const Productos: Product[] = [
   {
     id: 1,
-    name: "Zapato Niño 1 Bublee",
-    price: 150000,
+    name: "Tenis Superstar XLG",
+    price: 649950,
     discount: 10,
     description: "Zapato para niño de alta calidad",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/1.png",
     categories: ["niño"],
     tags: ["zapatos", "niño"],
     calification: 4.5
   },
   {
     id: 2,
-    name: "Zapato Niño 2",
+    name: "Chanclas Adilette Aqua (UNISEX)",
     price: 130000,
     discount: 5,
     description: "Zapato para niño resistente al agua",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/2.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "resistente al agua"],
     calification: 4.2
@@ -29,7 +29,7 @@ export const Productos: Product[] = [
     price: 280000,
     discount: 20,
     description: "Zapato elegante para hombre",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/hombre/1.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "elegante"],
     calification: 4.8
@@ -40,7 +40,7 @@ export const Productos: Product[] = [
     price: 220000,
     discount: 15,
     description: "Zapato casual para hombre",
-    image: "https://via.placeholder.com/380x380",
+    image:"assets/img/zapatos/hombre/2.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "casual"],
     calification: 4.4
@@ -51,7 +51,7 @@ export const Productos: Product[] = [
     price: 350000,
     discount: 10,
     description: "Zapato elegante para mujer",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/mujer/1.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "elegante"],
     calification: 4.6
@@ -62,7 +62,7 @@ export const Productos: Product[] = [
     price: 170000,
     discount: 5,
     description: "Zapato casual para mujer",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/mujer/2.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "casual"],
     calification: 4.2
@@ -70,22 +70,22 @@ export const Productos: Product[] = [
   // Agregar más productos hasta alcanzar 20 elementos
   {
     id: 7,
-    name: "Zapato Niño 3",
+    name: "Tenis Start Your Run",
     price: 260000,
     discount: 15,
     description: "Zapato para niño con luces",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/3.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "luces"],
     calification: 4.0
   },
   {
     id: 7,
-    name: "Zapato Niño 3",
+    name: "Response Runner Shoes",
     price: 150000,
     discount: 15,
     description: "Zapato para niño con luces",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/4.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "luces"],
     calification: 4.0
@@ -96,7 +96,7 @@ export const Productos: Product[] = [
     price: 310000,
     discount: 25,
     description: "Zapato deportivo para hombre",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/hombre/3.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "deportivo"],
     calification: 4.5
@@ -107,18 +107,18 @@ export const Productos: Product[] = [
     price: 450000,
     discount: 12,
     description: "Zapato para mujer con plataforma",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/mujer/3.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "plataforma"],
     calification: 4.7
   },
   {
     id: 10,
-    name: "Zapato Niño 4",
+    name: "NY 90 W",
     price: 180000,
     discount: 8,
     description: "Zapato para niño deportivo",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/5.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "deportivo"],
     calification: 4.3
@@ -129,7 +129,7 @@ export const Productos: Product[] = [
     price: 280000,
     discount: 18,
     description: "Zapato casual para hombre",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/hombre/4.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "casual"],
     calification: 4.1
@@ -140,18 +140,18 @@ export const Productos: Product[] = [
     price: 265000,
     discount: 10,
     description: "Zapato elegante para mujer",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/mujer/4.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "elegante"],
     calification: 4.9
   },
   {
     id: 13,
-    name: "Zapato Niño 5",
+    name: "Tenis Samba OG",
     price: 195000,
     discount: 20,
     description: "Zapato para niño de cuero",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/6.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "cuero"],
     calification: 4.6
@@ -162,7 +162,7 @@ export const Productos: Product[] = [
     price: 250000,
     discount: 5,
     description: "Zapato casual para hombre",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/hombre/5.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "casual"],
     calification: 4.7
@@ -173,18 +173,18 @@ export const Productos: Product[] = [
     price: 195000,
     discount: 15,
     description: "Zapato deportivo para mujer",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/mujer/5.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "deportivo"],
     calification: 4.2
   },
   {
     id: 16,
-    name: "Zapato Niño 6",
+    name: "NY 90",
     price: 140000,
     discount: 10,
     description: "Zapato casual para niño",
-    image: "https://via.placeholder.com/380x380",
+    image: "assets/img/zapatos/nino/7.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "casual"],
     calification: 4.4
