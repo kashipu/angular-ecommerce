@@ -18,6 +18,7 @@ import { HeaderOptionsComponent } from './components/header-options/header-optio
 import { FooterComponent } from './components/footer/footer.component';
 import { ShoppingCarComponent } from './components/shopping-car/shopping-car.component';
 import { CarritoComprasComponent } from './pages/carrito-compras/carrito-compras.component';
+import { ProductCartComponent } from './components/product-cart/product-cart.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CarritoComprasComponent } from './pages/carrito-compras/carrito-compras
     HeaderOptionsComponent,
     FooterComponent,
     ShoppingCarComponent,
-    CarritoComprasComponent
+    CarritoComprasComponent,
+    ProductCartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,17 @@
-
+<div class="container">
+  <app-breadcrumb></app-breadcrumb>
+  <app-page-title
+  titlePage="Tu carrito"
+  subtitlePage="Los artículos en tu carrito no están reservados. Termina el proceso de compra ahora para hacerte con ellos.">
+  </app-page-title>
+  <div class="carrito-grid">
+    <div class="carrito-items">
+      <div *ngFor="let item of allProducts" class="productos-grid">
+        <app-product-cart [product]="item"></app-product-cart>
+      </div>
+    </div>
+    <div class="resume-grid">
+      resumen de compra
+    </div>
+  </div>
+</div>

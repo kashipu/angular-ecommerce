@@ -8,7 +8,7 @@ import { CarritoComprasComponent } from './pages/carrito-compras/carrito-compras
 
 const routes: Routes = [
   { path: '', component: ProductPageComponent, data:{breadcrumb: 'Home'}, pathMatch: 'full'},
-  { path: 'carrito', component: CarritoComprasComponent, data:{breadcrumb: 'Home'} },
+  { path: 'carrito', component: CarritoComprasComponent, data:{breadcrumb: 'Carrito de compras'} },
   { path: 'zapatos-mujer', component: ZapatosMujerComponent, data:{breadcrumb: 'Zapatos mujer'} },
   { path: 'zapatos-hombre', component: ZapatosHombreComponent, data:{breadcrumb: 'Zapatos hombre'} },
   { path: 'zapatos-ninos', component: ZapatosNinosComponent, data:{breadcrumb: 'Zapatos Niño'} },

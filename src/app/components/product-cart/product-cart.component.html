@@ -1,0 +1,19 @@
+<div class="product-cart-box">
+  <div class="product-cart-image">
+    <img src="{{product.image}}" alt="product image" />
+  </div>
+  <div class="product-cart-body">
+    <div class="product-cart-title">
+      <h3>{{product.name}}</h3>
+    </div>
+    <div class="product-cart-category">
+      <h3>{{product.categories[0] | titlecase }}</h3>
+    </div>
+    <div class="product-cart-cantidad">
+      <h3>Cantidad: {{product.cantidad}}</h3>
+    </div>
+    <div class="product-cart-total">
+      <h3>$ {{product.price * product.cantidad | number}}</h3>
+    </div>
+  </div>
+</div>
