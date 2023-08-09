@@ -4,6 +4,7 @@
 
 .shopping-cart-box {
   max-width: 400px;
+  max-height: 80vh;
   width: 100%;
   right: 0;
   position: absolute;
@@ -12,9 +13,25 @@
   background-color: var(--white);
   z-index: 2;
 }
+
+.shopping-cart-title {
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: var(--space-4);
+  }
+}
+
+.shopping-cart-overflow {
+  overflow-y: auto;
+  max-height: 60vh;
+  padding-right: 20px;
+}
+
 .shopping-cart-item {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   line-height: 1.5;
   padding: var(--space-4) 0;
   img {
@@ -29,6 +46,15 @@
     margin: 0;
   }
 }
+
+.shopping-cart-delete-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--space-2);
+  cursor: pointer;
+}
+
 .shopping-cart-total {
   padding: var(--space-4) 0;
 }

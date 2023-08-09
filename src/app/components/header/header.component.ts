@@ -11,18 +11,18 @@ export class HeaderComponent {
   counterItemsCar: number = 0;
   constructor(private ProductosService: ProductosService) { }
   ngOnInit(): void {
-    this.ProductosService.getShoppingCart().subscribe(() => {
-      this.counterItemsCar = this.ProductosService.SHOPPING_CART.length;
-    });
     this.responsiveMenu = false;
+    this.ProductosService.updateShoppingCart$.subscribe((products) => {
+      this.counterItemsCar = products.reduce((total, product) => total + product.cantidad, 0);
+    });
   }
+
   showMenu() {
     this.responsiveMenu = !this.responsiveMenu;
     document.body.style.overflow = this.responsiveMenu ? 'hidden' : 'auto';
   }
   showCart() {
     this.shoppingCart = !this.shoppingCart;
-    console.log("hola")
   }
   restartMenu() {
     this.responsiveMenu = false;

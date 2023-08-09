@@ -1,3 +1,14 @@
 <div class="breadcrumb-box">
-  <p>Atras / Zapatos / Hombre</p>
+  <nav>
+    <ul class="breadcrumb">
+      <li *ngFor="let breadcrumb of breadcrumbs; let last = last">
+        <ng-container *ngIf="!last">
+          <a [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a> >
+        </ng-container>
+        <ng-container *ngIf="last">
+          {{ breadcrumb.label }}
+        </ng-container>
+      </li>
+    </ul>
+  </nav>
 </div>

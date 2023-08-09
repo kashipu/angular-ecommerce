@@ -7,11 +7,9 @@ import { ProductosService } from '../../services/productos.service';
   styleUrls: ['./shopping-car.component.scss']
 })
 export class ShoppingCarComponent {
-  carrito: any[] = [];
-  constructor(private ProductosService: ProductosService) {
-    this.ProductosService.getShoppingCart().subscribe(carrito => {
-      this.carrito = carrito;
-    });
+  cart = this.ProductosService.SHOPPING_CART;
+  constructor(private ProductosService: ProductosService) {}
+  totalShoppingCart(): number {
+    return this.ProductosService.totalShoppingCart();
   }
-
 }

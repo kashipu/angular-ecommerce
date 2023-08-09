@@ -1,8 +1,9 @@
 import { Product } from "../models/Product.model";
+import { v4 } from "uuid";
 
 export const Productos: Product[] = [
   {
-    id: 1,
+    id: v4(),
     name: "Tenis Superstar XLG",
     price: 649950,
     discount: 10,
@@ -10,10 +11,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/1.png",
     categories: ["niño"],
     tags: ["zapatos", "niño"],
-    calification: 4.5
+    calification: 4.5,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 2,
+    id: v4(),
     name: "Chanclas Adilette Aqua (UNISEX)",
     price: 130000,
     discount: 5,
@@ -21,10 +24,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/2.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "resistente al agua"],
-    calification: 4.2
+    calification: 4.2,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 3,
+    id: v4(),
     name: "Zapato Hombre 1",
     price: 280000,
     discount: 20,
@@ -32,10 +37,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/hombre/1.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "elegante"],
-    calification: 4.8
+    calification: 4.8,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 4,
+    id: v4(),
     name: "Zapato Hombre 2",
     price: 220000,
     discount: 15,
@@ -43,10 +50,12 @@ export const Productos: Product[] = [
     image:"assets/img/zapatos/hombre/2.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "casual"],
-    calification: 4.4
+    calification: 4.4,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 5,
+    id: v4(),
     name: "Zapato Mujer 1",
     price: 350000,
     discount: 10,
@@ -54,10 +63,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/mujer/1.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "elegante"],
-    calification: 4.6
+    calification: 4.6,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 6,
+    id: v4(),
     name: "Zapato Mujer 2",
     price: 170000,
     discount: 5,
@@ -65,11 +76,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/mujer/2.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "casual"],
-    calification: 4.2
+    calification: 4.2,
+    cantidad: 1,
+    stock: 10
   },
-  // Agregar más productos hasta alcanzar 20 elementos
   {
-    id: 7,
+    id: v4(),
     name: "Tenis Start Your Run",
     price: 260000,
     discount: 15,
@@ -77,10 +89,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/3.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "luces"],
-    calification: 4.0
+    calification: 4.0,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 7,
+    id: v4(),
     name: "Response Runner Shoes",
     price: 150000,
     discount: 15,
@@ -88,10 +102,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/4.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "luces"],
-    calification: 4.0
+    calification: 4.0,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 8,
+    id: v4(),
     name: "Zapato Hombre 3",
     price: 310000,
     discount: 25,
@@ -99,10 +115,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/hombre/3.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "deportivo"],
-    calification: 4.5
+    calification: 4.5,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 9,
+    id: v4(),
     name: "Zapato Mujer 3",
     price: 450000,
     discount: 12,
@@ -110,10 +128,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/mujer/3.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "plataforma"],
-    calification: 4.7
+    calification: 4.7,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 10,
+    id: v4(),
     name: "NY 90 W",
     price: 180000,
     discount: 8,
@@ -121,10 +141,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/5.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "deportivo"],
-    calification: 4.3
+    calification: 4.3,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 11,
+    id: v4(),
     name: "Zapato Hombre 4",
     price: 280000,
     discount: 18,
@@ -132,10 +154,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/hombre/4.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "casual"],
-    calification: 4.1
+    calification: 4.1,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 12,
+    id: v4(),
     name: "Zapato Mujer 4",
     price: 265000,
     discount: 10,
@@ -143,10 +167,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/mujer/4.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "elegante"],
-    calification: 4.9
+    calification: 4.9,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 13,
+    id: v4(),
     name: "Tenis Samba OG",
     price: 195000,
     discount: 20,
@@ -154,10 +180,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/6.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "cuero"],
-    calification: 4.6
+    calification: 4.6,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 14,
+    id: v4(),
     name: "Zapato Hombre 5",
     price: 250000,
     discount: 5,
@@ -165,10 +193,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/hombre/5.png",
     categories: ["hombre"],
     tags: ["zapatos", "hombre", "casual"],
-    calification: 4.7
+    calification: 4.7,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 15,
+    id: v4(),
     name: "Zapato Mujer 5",
     price: 195000,
     discount: 15,
@@ -176,10 +206,12 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/mujer/5.png",
     categories: ["mujer"],
     tags: ["zapatos", "mujer", "deportivo"],
-    calification: 4.2
+    calification: 4.2,
+    cantidad: 1,
+    stock: 10
   },
   {
-    id: 16,
+    id: v4(),
     name: "NY 90",
     price: 140000,
     discount: 10,
@@ -187,6 +219,8 @@ export const Productos: Product[] = [
     image: "assets/img/zapatos/nino/7.png",
     categories: ["niño"],
     tags: ["zapatos", "niño", "casual"],
-    calification: 4.4
+    calification: 4.4,
+    cantidad: 1,
+    stock: 10
   }
 ];

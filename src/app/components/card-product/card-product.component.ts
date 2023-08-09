@@ -10,7 +10,7 @@ import { ProductosService } from '../../services/productos.service';
 })
 export class CardProductComponent {
   dataInit:Product = {
-    id: 0,
+    id: '',
     name: '',
     price: 0,
     discount: 0,
@@ -18,12 +18,14 @@ export class CardProductComponent {
     image: '',
     categories: [],
     tags: [],
-    calification: 0
+    calification: 0,
+    cantidad: 0,
+    stock: 0
   };
   @Input() productInfo: Product = this.dataInit;
   constructor(private ProductosService: ProductosService) {
    }
-    addToCart(id:number): void {
+    addToCart(id:string): void {
       this.ProductosService.addToCarById(id);
       console.log(this.ProductosService.SHOPPING_CART)
     }
