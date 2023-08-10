@@ -4,9 +4,6 @@ import { Product } from '../models/Product.model';
 /* Data */
 import { Productos } from '../data/data.products';
 import { BehaviorSubject } from 'rxjs';
-
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -21,6 +18,12 @@ export class ProductosService {
   getAllProducts(): Product[] {
     return this.PRODUCTS_DATA;
   }
+  // Funcion para obtener un producto por su id
+  getProductById(id: string): Product | undefined  {
+    console.log(this.PRODUCTS_DATA);
+    return this.PRODUCTS_DATA.find(product => product.id === id);
+  }
+
   filterByCategory(category: string): Product[] {
     return this.PRODUCTS_DATA.filter(product => product.categories.includes(category));
   }

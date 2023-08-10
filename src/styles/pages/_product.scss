@@ -3,6 +3,9 @@
   grid-template-columns: 75% 25%;
 }
 .product-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #EBEEEF;
   img {
     width: 100%;
     object-fit: cover;

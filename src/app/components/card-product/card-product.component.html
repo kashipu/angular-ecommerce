@@ -1,7 +1,9 @@
 <div class="card-product">
   <div class="card-product-box">
     <div class="card-product-img">
-      <img [src]="productInfo.image" alt="product image" />
+      <a [routerLink]="'/zapatos/' + productInfo.id">
+        <img [src]="productInfo.image" alt="product image" />
+      </a>
     </div>
     <div class="card-product-body">
       <div class="card-product-price">

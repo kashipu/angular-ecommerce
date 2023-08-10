@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'zapatos-mujer', component: ZapatosMujerComponent, data:{breadcrumb: 'Zapatos mujer'} },
   { path: 'zapatos-hombre', component: ZapatosHombreComponent, data:{breadcrumb: 'Zapatos hombre'} },
   { path: 'zapatos-ninos', component: ZapatosNinosComponent, data:{breadcrumb: 'Zapatos Niño'} },
+  { path: 'zapatos/:id', component: ProductPageComponent, data:{breadcrumb: 'Zapatos mujer'} },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

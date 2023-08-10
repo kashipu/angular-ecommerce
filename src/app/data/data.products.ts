@@ -1,9 +1,8 @@
 import { Product } from "../models/Product.model";
-import { v4 } from "uuid";
 
 export const Productos: Product[] = [
   {
-    id: v4(),
+    id: "4d4778cb-ae75-4cfa-8754-8ec0a2dfb84d",
     name: "Tenis Superstar XLG",
     price: 649950,
     discount: 10,
@@ -16,7 +15,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "07192d3d-b829-4f56-ba5e-4bb18d8436b2",
     name: "Chanclas Adilette Aqua (UNISEX)",
     price: 130000,
     discount: 5,
@@ -29,7 +28,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "608707c4-ce35-474a-9058-ab80cf6611ac",
     name: "Zapato Hombre 1",
     price: 280000,
     discount: 20,
@@ -42,7 +41,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "6e1df6b0-c064-45a2-a9bc-5d8196b096f4",
     name: "Zapato Hombre 2",
     price: 220000,
     discount: 15,
@@ -55,7 +54,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "a0e587dd-7868-4395-a9e8-99f094d38752",
     name: "Zapato Mujer 1",
     price: 350000,
     discount: 10,
@@ -68,7 +67,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "bff659da-0382-496d-9d97-a4ee7a7edb77",
     name: "Zapato Mujer 2",
     price: 170000,
     discount: 5,
@@ -81,7 +80,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "5c9a2d2e-a5da-4faa-bc1b-f7c3ec54beb0",
     name: "Tenis Start Your Run",
     price: 260000,
     discount: 15,
@@ -94,7 +93,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "7c63258c-c10a-4e03-ba45-c0cd031a5944",
     name: "Response Runner Shoes",
     price: 150000,
     discount: 15,
@@ -107,7 +106,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "7b9d37e1-bf6a-414f-ade1-c8fb3aeab10d",
     name: "Zapato Hombre 3",
     price: 310000,
     discount: 25,
@@ -120,7 +119,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "c00f1caf-724f-46aa-a758-9a4495acaa93",
     name: "Zapato Mujer 3",
     price: 450000,
     discount: 12,
@@ -133,7 +132,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "52f0e4b2-0145-493d-9d19-f46a557ab679",
     name: "NY 90 W",
     price: 180000,
     discount: 8,
@@ -146,7 +145,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "861a776b-863c-4023-bc3a-1502e7fab47b",
     name: "Zapato Hombre 4",
     price: 280000,
     discount: 18,
@@ -159,7 +158,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "3e2c2c3f-232a-465b-a8f0-976b5e4c1a27",
     name: "Zapato Mujer 4",
     price: 265000,
     discount: 10,
@@ -172,7 +171,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "02003963-b6ec-4b60-9428-4924a46a6a3b",
     name: "Tenis Samba OG",
     price: 195000,
     discount: 20,
@@ -185,7 +184,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "1ae9f827-aac0-4774-b101-bb92c3c68378",
     name: "Zapato Hombre 5",
     price: 250000,
     discount: 5,
@@ -198,7 +197,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "bc4d155c-1973-4927-929a-c45f03eda3e4",
     name: "Zapato Mujer 5",
     price: 195000,
     discount: 15,
@@ -211,7 +210,7 @@ export const Productos: Product[] = [
     stock: 10
   },
   {
-    id: v4(),
+    id: "807c1fa8-e80e-4dcc-8942-1d3b7156ffe4",
     name: "NY 90",
     price: 140000,
     discount: 10,
