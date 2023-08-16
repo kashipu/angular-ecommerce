@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TopAlertComponent } from './components/top-alert/top-alert.component';
-import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { ZapatosMujerComponent } from './pages/zapatos-mujer/zapatos-mujer.component';
@@ -19,13 +18,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ShoppingCarComponent } from './components/shopping-car/shopping-car.component';
 import { CarritoComprasComponent } from './pages/carrito-compras/carrito-compras.component';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TopAlertComponent,
-    BreadcrumbComponent,
     PageTitleComponent,
     CardProductComponent,
     ZapatosMujerComponent,
@@ -37,7 +36,8 @@ import { ProductCartComponent } from './components/product-cart/product-cart.com
     FooterComponent,
     ShoppingCarComponent,
     CarritoComprasComponent,
-    ProductCartComponent
+    ProductCartComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

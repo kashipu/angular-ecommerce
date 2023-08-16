@@ -5,14 +5,15 @@ import { ZapatosHombreComponent } from './pages/zapatos-hombre/zapatos-hombre.co
 import { ZapatosNinosComponent } from './pages/zapatos-ninos/zapatos-ninos.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { CarritoComprasComponent } from './pages/carrito-compras/carrito-compras.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: ProductPageComponent, data:{breadcrumb: 'Home'}, pathMatch: 'full'},
-  { path: 'carrito', component: CarritoComprasComponent, data:{breadcrumb: 'Carrito de compras'} },
-  { path: 'zapatos-mujer', component: ZapatosMujerComponent, data:{breadcrumb: 'Zapatos mujer'} },
-  { path: 'zapatos-hombre', component: ZapatosHombreComponent, data:{breadcrumb: 'Zapatos hombre'} },
-  { path: 'zapatos-ninos', component: ZapatosNinosComponent, data:{breadcrumb: 'Zapatos Niño'} },
-  { path: 'zapatos/:id', component: ProductPageComponent, data:{breadcrumb: 'Zapatos mujer'} },
+  { path: '', component: HomeComponent, pathMatch: 'full'},
+  { path: 'carrito', component: CarritoComprasComponent },
+  { path: 'zapatos-mujer', component: ZapatosMujerComponent },
+  { path: 'zapatos-hombre', component: ZapatosHombreComponent },
+  { path: 'zapatos-ninos', component: ZapatosNinosComponent },
+  { path: 'zapatos/:id', component: ProductPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

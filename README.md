@@ -2,27 +2,27 @@
 ## Requerimientos
 
 * Yo pueda entrar y ver una lista de productos que puedo comprar.
-* Quiero poder ver
-  - Precio de un producto
-  - Nombre
-  - Categoria
-  - Tags
-  - Imagen
-  - Descuento con restriccion de tiempo *(quiero poder ver este descuento cuando acaba),
-  - Calificación
-  - Comentarios.
+* Quiero poder ver ✅
+  - Precio de un producto ✅
+  - Nombre ✅
+  - Categoria ✅
+  - Tags ✅
+  - Imagen ✅
+  - Descuento con restriccion de tiempo *(quiero poder ver este descuento cuando acaba), 🔨
+  - Calificación 🔨
+  - Comentarios. 🔨
 
-* Deseo poder ordenar los productos que estoy viendo por precio (menor a mayor, o viceversa) o por calificacion (menor a mayor, o viceversa)
+* Deseo poder ordenar los productos que estoy viendo por precio (menor a mayor, o viceversa) o por calificacion (menor a mayor, o viceversa) 🔨
 
-* Quiero poder añadir a mi carrito de compras un producto que me haya interesado.
+* Quiero poder añadir a mi carrito de compras un producto que me haya interesado. ✅
 
-* Quiero poder añadir tantos productos me interesen
+* Quiero poder añadir tantos productos me interesen ✅
 
-* Quiero poder modificar la cantidad de productos en mi carrito (añadir o disminuir unidades, eliminar un producto carrito)
+* Quiero poder modificar la cantidad de productos en mi carrito (añadir o disminuir unidades, eliminar un producto carrito) 🔨
 
-* En mi carrito quiero poder ver el precio total de los productos que llevo hasta el momento
+* En mi carrito quiero poder ver el precio total de los productos que llevo hasta el momento ✅
 
-* Deseo también poder concretar la compra de los productos que tengo en mi carrito.
+* Deseo también poder concretar la compra de los productos que tengo en mi carrito. 🔨
 
 
 
@@ -42,3 +42,4 @@ El proyecto tiene los siguientes directorios
 ### Correr el proyecto
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+

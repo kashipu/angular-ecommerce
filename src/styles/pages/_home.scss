@@ -1,0 +1,39 @@
+.home-box {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-1);
+}
+
+.home-box a {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.home-box a:hover {
+  background-color: var(--white);
+}
+
+.home-box a:hover .item-home h2 {
+  color: var(--black);
+}
+
+.item-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: var(--white);
+    font-size: var(--space-10);
+    font-weight: var(--f-w-700);
+  }
+}
+
+@media (max-width: $bp-medium) {
+  .home-box {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}
