@@ -13,7 +13,7 @@ export class ProductosService {
   private _updateShoppingCart = new BehaviorSubject<Product[]>([]);
   updateShoppingCart$ = this._updateShoppingCart.asObservable();
   constructor() {
-    console.log()
+    this.SHOPPING_CART.push(this.PRODUCTS_DATA[0]); // Agregamos un producto al carrito
   }
   getAllProducts(): Product[] {
     return this.PRODUCTS_DATA;
@@ -46,6 +46,25 @@ export class ProductosService {
 
   countCantCart(): number {
     return this.SHOPPING_CART.reduce((total, product) => total + product.cantidad, 0);
+  }
+
+  sortByPrice(datos:Product[], order: string): Product[] {
+    if (order === 'asc') {
+      return datos.sort((a, b) => a.price - b.price);
+    } else if (order === 'desc') {
+      return datos.sort((a, b) => b.price - a.price);
+    } else {
+      return datos;
+    }
+  }
+
+  deleteProductCart(id: string): void {
+    const product = this.SHOPPING_CART.find(product => product.id === id);
+    if (product) {
+      const index = this.SHOPPING_CART.indexOf(product);
+      this.SHOPPING_CART.splice(index, 1);
+    }
+    this._updateShoppingCart.next(this.SHOPPING_CART);
   }
 }
 

@@ -27,6 +27,5 @@ export class CardProductComponent {
    }
     addToCart(id:string): void {
       this.ProductosService.addToCarById(id);
-      console.log(this.ProductosService.SHOPPING_CART)
     }
 }

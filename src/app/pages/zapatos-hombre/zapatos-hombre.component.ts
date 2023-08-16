@@ -15,4 +15,8 @@ export class ZapatosHombreComponent {
   constructor(private titleService: Title, private productosService: ProductosService) {
     this.titleService.setTitle(this.titlePage);
   }
+  orderByPrice(data:any): void {
+    let order = data.target.value;
+    this.productsArray = this.productosService.sortByPrice(this.productsArray, order);
+  }
 }

@@ -70,3 +70,12 @@
     text-transform: uppercase;
   }
 }
+.filters-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--space-8);
+  .form-group {
+    max-width: 350px;
+    width: 100%;
+  }
+}

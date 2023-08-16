@@ -5,7 +5,9 @@
   <div class="shopping-cart-overflow">
     <div *ngFor="let item of cart" class="shopping-cart-card">
       <div class="shopping-cart-item">
-        <img [src]="item.image" [alt]="item.name">
+        <div class="shopping-cart-image">
+          <img [src]="item.image" [alt]="item.name">
+        </div>
         <div class="shopping-cart-item-info">
           <h2>{{item.name}}</h2>
           <p> $ {{item.price | number}}</p>
@@ -17,7 +19,9 @@
   <div class="shopping-cart-total">
     <p>Total: $ {{totalShoppingCart() | number}}</p>
   </div>
-  <button routerLink="carrito">Ver Carrito</button>
+  <div class="shopping-cart-button-cart">
+    <button routerLink="carrito">Ver Carrito</button>
+  </div>
 </div>
 <ng-template #elseBlock>
   <div class="shopping-cart-box">

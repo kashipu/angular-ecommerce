@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../models/Product.model';
+import { ProductosService } from '../../services/productos.service';
 
 @Component({
   selector: 'app-product-cart',
@@ -21,4 +22,17 @@ export class ProductCartComponent {
     stock: 0
   };
   @Input() product: Product = this.dataInit;
+  constructor(private productosService: ProductosService) {
+  }
+  deleteProductCart() {
+    this.productosService.deleteProductCart(this.product.id);
+  }
+  addCantidad() {
+    this.product.cantidad++;
+  }
+  removeCantidad() {
+    if (this.product.cantidad > 1) {
+      this.product.cantidad--;
+    }
+  }
 }
