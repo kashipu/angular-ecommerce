@@ -12,9 +12,7 @@ export class ProductosService {
   SHOPPING_CART: Product[] = [];
   private _updateShoppingCart = new BehaviorSubject<Product[]>([]);
   updateShoppingCart$ = this._updateShoppingCart.asObservable();
-  constructor() {
-    this.SHOPPING_CART.push(this.PRODUCTS_DATA[0]); // Agregamos un producto al carrito
-  }
+
   getAllProducts(): Product[] {
     return this.PRODUCTS_DATA;
   }

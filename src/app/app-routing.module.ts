@@ -6,6 +6,7 @@ import { ZapatosNinosComponent } from './pages/zapatos-ninos/zapatos-ninos.compo
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { CarritoComprasComponent } from './pages/carrito-compras/carrito-compras.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ZapatosBackComponent } from './pages/zapatos-back/zapatos-back.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'zapatos-mujer', component: ZapatosMujerComponent },
   { path: 'zapatos-hombre', component: ZapatosHombreComponent },
   { path: 'zapatos-ninos', component: ZapatosNinosComponent },
+  { path: 'zapatosback', component: ZapatosBackComponent },
   { path: 'zapatos/:id', component: ProductPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
